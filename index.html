@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-  </head>
-  <body
-   <script>
-  window.addEventListener("gamepadconnected", function(e) {
+    <script>
+        window.addEventListener("gamepadconnected", function(e) {
   alert("Gamepad connected at index %d: %s. %d buttons, %d axes.",
     e.gamepad.index, e.gamepad.id,
     e.gamepad.buttons.length, e.gamepad.axes.length);
 });
-  </script>
+        </script>
+  </head>
+  <body>
+    <h1>Testing Controller API!</h1>
   </body>
 </html>
