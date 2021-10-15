@@ -113,6 +113,11 @@ function scangamepads() {
         controllers[gamepads[i].index] = gamepads[i];
       } else {
         addgamepad(gamepads[i]);
+        window.addEventListener("gamepadconnected", function(e) {
+  alert("Gamepad connected at index %d: %s. %d buttons, %d axes.",
+    e.gamepad.index, e.gamepad.id,
+    e.gamepad.buttons.length, e.gamepad.axes.length);
+});
       }
     }
   }
